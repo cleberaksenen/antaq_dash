@@ -1,0 +1,247 @@
+table 'antaq_database carga'
+	lineageTag: 503ce12f-4837-4624-9113-3168fb65cccf
+
+	column idcarga
+		dataType: int64
+		formatString: 0
+		lineageTag: 157a6fce-8e64-4029-b481-5c441f5b7987
+		summarizeBy: sum
+		sourceColumn: idcarga
+
+		annotation SummarizationSetBy = Automatic
+
+	column idatracacao
+		dataType: int64
+		formatString: 0
+		lineageTag: e802d12d-b927-415d-9dfd-2274d0a68c58
+		summarizeBy: none
+		sourceColumn: idatracacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column origem
+		dataType: string
+		lineageTag: a35b8179-264a-4fcb-8b9e-3ec51fbadc92
+		summarizeBy: none
+		sourceColumn: origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column destino
+		dataType: string
+		lineageTag: 95202e99-c1f7-4d31-9ce7-51135d230093
+		summarizeBy: none
+		sourceColumn: destino
+
+		annotation SummarizationSetBy = Automatic
+
+	column cdmercadoria
+		dataType: string
+		lineageTag: 06fe8b7e-2268-470f-8e1a-66643c9d636a
+		summarizeBy: none
+		sourceColumn: cdmercadoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_operacao_da_carga
+		dataType: string
+		lineageTag: f60cd8b1-907a-4ff4-a232-b04168b713f4
+		summarizeBy: none
+		sourceColumn: tipo_operacao_da_carga
+
+		annotation SummarizationSetBy = Automatic
+
+	column carga_geral_acondicionamento
+		dataType: string
+		lineageTag: e9c9852a-0fdb-4e21-a9ed-096d75dbecd2
+		summarizeBy: none
+		sourceColumn: carga_geral_acondicionamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column conteinerestado
+		dataType: string
+		lineageTag: e1fec8b3-e214-4428-841f-3979fd60f3b9
+		summarizeBy: none
+		sourceColumn: conteinerestado
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_navegacao
+		dataType: string
+		lineageTag: 5e5a222e-9aa7-4b1a-b160-ec392da31747
+		summarizeBy: none
+		sourceColumn: tipo_navegacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column flagautorizacao
+		dataType: string
+		lineageTag: 1e958110-f21b-452d-8b75-23a841490d97
+		summarizeBy: none
+		sourceColumn: flagautorizacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column flagcabotagem
+		dataType: double
+		lineageTag: 965b38ac-15d6-44a8-88ed-9f94b4cf1952
+		summarizeBy: sum
+		sourceColumn: flagcabotagem
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column flagcabotagemmovimentacao
+		dataType: double
+		lineageTag: 81553be7-4e67-45b4-8439-a7e8c1f391a0
+		summarizeBy: sum
+		sourceColumn: flagcabotagemmovimentacao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column flagconteinertamanho
+		dataType: string
+		lineageTag: 216e47f1-21c0-4f71-bdfa-5e5eb740f501
+		summarizeBy: none
+		sourceColumn: flagconteinertamanho
+
+		annotation SummarizationSetBy = Automatic
+
+	column flaglongocurso
+		dataType: double
+		lineageTag: bb7b91a2-8622-4c2b-a4d1-fa8cc822c082
+		summarizeBy: sum
+		sourceColumn: flaglongocurso
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column flagmcoperacaocarga
+		dataType: int64
+		formatString: 0
+		lineageTag: 9571c3a4-5ecf-4771-84de-cf2cf8d0a6dd
+		summarizeBy: sum
+		sourceColumn: flagmcoperacaocarga
+
+		annotation SummarizationSetBy = Automatic
+
+	column flagoffshore
+		dataType: double
+		lineageTag: 1649bce5-4059-4d4b-872d-587e2310d508
+		summarizeBy: sum
+		sourceColumn: flagoffshore
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column flagtransporteviainterioir
+		dataType: int64
+		formatString: 0
+		lineageTag: 072ae9b8-ca65-4aba-95fa-7cb5595669b4
+		summarizeBy: sum
+		sourceColumn: flagtransporteviainterioir
+
+		annotation SummarizationSetBy = Automatic
+
+	column percurso_transporte_em_vias_interiores
+		dataType: string
+		lineageTag: 25ba8f79-6bf8-4213-87d6-bc5e8696815f
+		summarizeBy: none
+		sourceColumn: percurso_transporte_em_vias_interiores
+
+		annotation SummarizationSetBy = Automatic
+
+	column percurso_transporte_interiores
+		dataType: string
+		lineageTag: 044c9c2d-fb6b-42a7-9311-adcb1f91a647
+		summarizeBy: none
+		sourceColumn: percurso_transporte_interiores
+
+		annotation SummarizationSetBy = Automatic
+
+	column stnaturezacarga
+		dataType: string
+		lineageTag: 02c1de88-ce03-4736-a8d0-374a45b98142
+		summarizeBy: none
+		sourceColumn: stnaturezacarga
+
+		annotation SummarizationSetBy = Automatic
+
+	column stsh2
+		dataType: string
+		lineageTag: 6af8e6aa-f671-4f9e-a3d3-d3f76f4255b8
+		summarizeBy: none
+		sourceColumn: stsh2
+
+		annotation SummarizationSetBy = Automatic
+
+	column stsh4
+		dataType: string
+		lineageTag: d043a5d0-a750-4baa-ae38-e54399429988
+		summarizeBy: none
+		sourceColumn: stsh4
+
+		annotation SummarizationSetBy = Automatic
+
+	column natureza_da_carga
+		dataType: string
+		lineageTag: 6558e5eb-5a53-412c-a094-81ac7084f142
+		summarizeBy: none
+		sourceColumn: natureza_da_carga
+
+		annotation SummarizationSetBy = Automatic
+
+	column sentido
+		dataType: string
+		lineageTag: 2178d03b-f39c-463e-a487-296831859ce2
+		summarizeBy: none
+		sourceColumn: sentido
+
+		annotation SummarizationSetBy = Automatic
+
+	column teu
+		dataType: int64
+		formatString: 0
+		lineageTag: 9e1d1b37-18dd-412d-b163-7474a9288870
+		summarizeBy: sum
+		sourceColumn: teu
+
+		annotation SummarizationSetBy = Automatic
+
+	column qtcarga
+		dataType: double
+		lineageTag: 54dc2eae-8b9f-4798-bdc0-df2989da93f0
+		summarizeBy: sum
+		sourceColumn: qtcarga
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vlpesocargabruta
+		dataType: double
+		lineageTag: 26aa049d-321b-4ebd-b869-dfd8ec8adb17
+		summarizeBy: sum
+		sourceColumn: vlpesocargabruta
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'antaq_database carga' = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("localhost", "antaq_database", [ReturnSingleDatabase=true]),
+				    antaq_database_carga = Fonte{[Schema="antaq_database",Item="carga"]}[Data]
+				in
+				    antaq_database_carga
+
+	annotation PBI_ResultType = Table
+

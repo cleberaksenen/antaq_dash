@@ -1,0 +1,27 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["antaq_database atracacao","antaq_database carga"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.141.1253.0 (25.03)+74f9999a1e95f78c739f3ea2b96ba340e9ba8729
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'antaq_database atracacao'
+ref table DateTableTemplate_a3fa98f0-7e78-4d50-9fd5-39dedb6c3c0a
+ref table LocalDateTable_43f4a818-c25c-48ea-9cf7-c6b86b701a57
+ref table LocalDateTable_95a2ecad-a0bd-45f8-b520-7b20f91288e2
+ref table LocalDateTable_e617d2bf-47eb-4659-bd29-3e2905ae3afc
+ref table LocalDateTable_5bb58215-b6ac-437c-aced-1b4b450ba228
+ref table LocalDateTable_778e48a9-5197-4848-b05d-923984f92fb0
+ref table 'antaq_database carga'
+
+ref cultureInfo pt-BR
+

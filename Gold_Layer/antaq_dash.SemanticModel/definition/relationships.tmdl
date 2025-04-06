@@ -1,0 +1,31 @@
+relationship f449e5b1-8051-43dd-ad0b-34ea6179011b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'antaq_database atracacao'.data_atracacao
+	toColumn: LocalDateTable_43f4a818-c25c-48ea-9cf7-c6b86b701a57.Date
+
+relationship 5b4b55be-293c-4aaf-bd53-1ca4789607a2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'antaq_database atracacao'.data_chegada
+	toColumn: LocalDateTable_95a2ecad-a0bd-45f8-b520-7b20f91288e2.Date
+
+relationship 1bdb0aea-72e0-4fb9-9b81-2ce21433e258
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'antaq_database atracacao'.data_desatracacao
+	toColumn: LocalDateTable_e617d2bf-47eb-4659-bd29-3e2905ae3afc.Date
+
+relationship 8831ce0b-dfe8-4e4e-bdbb-81b607695732
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'antaq_database atracacao'.data_inicio_operacao
+	toColumn: LocalDateTable_5bb58215-b6ac-437c-aced-1b4b450ba228.Date
+
+relationship 71a970f7-8748-4c76-a375-b73928f301a8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'antaq_database atracacao'.data_termino_operacao
+	toColumn: LocalDateTable_778e48a9-5197-4848-b05d-923984f92fb0.Date
+
+relationship edf42fef-4b93-420c-9306-5fb74ee97f5a
+	fromColumn: 'antaq_database carga'.idatracacao
+	toColumn: 'antaq_database atracacao'.idatracacao
+
+	annotation PBI_IsFromSource = FS
+

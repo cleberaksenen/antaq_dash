@@ -1,0 +1,301 @@
+table 'antaq_database atracacao'
+	lineageTag: b64c3ceb-74a8-4012-b7b8-b960f977fd70
+
+	column idatracacao
+		dataType: int64
+		formatString: 0
+		lineageTag: 73ac52ca-7dd7-486b-9904-05343aa7d7a1
+		summarizeBy: none
+		sourceColumn: idatracacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column cdtup
+		dataType: string
+		lineageTag: 3e9b91b2-4fe5-4147-82a7-11d63897727a
+		summarizeBy: none
+		sourceColumn: cdtup
+
+		annotation SummarizationSetBy = Automatic
+
+	column idberco
+		dataType: string
+		lineageTag: 73877c47-2052-4019-83e1-3fd3c9094e4b
+		summarizeBy: none
+		sourceColumn: idberco
+
+		annotation SummarizationSetBy = Automatic
+
+	column berco
+		dataType: string
+		lineageTag: f244162d-e225-4245-be4c-967c369f7536
+		summarizeBy: none
+		sourceColumn: berco
+
+		annotation SummarizationSetBy = Automatic
+
+	column porto_atracacao
+		dataType: string
+		lineageTag: f6274d33-5520-404f-be42-f6eaadf0e526
+		summarizeBy: none
+		sourceColumn: porto_atracacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column coordenadas
+		dataType: string
+		lineageTag: 65378c23-0a48-4ad9-8c72-b845674aacc1
+		summarizeBy: none
+		sourceColumn: coordenadas
+
+		annotation SummarizationSetBy = Automatic
+
+	column apelido_instalacao_portuaria
+		dataType: string
+		lineageTag: 0d6539e9-be18-4c0e-b5ae-c86dd581cd3a
+		summarizeBy: none
+		sourceColumn: apelido_instalacao_portuaria
+
+		annotation SummarizationSetBy = Automatic
+
+	column complexo_portuario
+		dataType: string
+		lineageTag: 573fa10d-2864-49f3-ab5d-2d372188822d
+		summarizeBy: none
+		sourceColumn: complexo_portuario
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_da_autoridade_portuaria
+		dataType: string
+		lineageTag: f0e4edac-79d9-4b47-a58f-f96461c15572
+		summarizeBy: none
+		sourceColumn: tipo_da_autoridade_portuaria
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_atracacao
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9679d8fb-7d84-4eb6-9f16-77f17fae6a26
+		summarizeBy: none
+		sourceColumn: data_atracacao
+
+		variation Variation
+			isDefault
+			relationship: f449e5b1-8051-43dd-ad0b-34ea6179011b
+			defaultHierarchy: LocalDateTable_43f4a818-c25c-48ea-9cf7-c6b86b701a57.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_chegada
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b6c30b3b-c5bc-4e20-8188-c89d391f43d8
+		summarizeBy: none
+		sourceColumn: data_chegada
+
+		variation Variation
+			isDefault
+			relationship: 5b4b55be-293c-4aaf-bd53-1ca4789607a2
+			defaultHierarchy: LocalDateTable_95a2ecad-a0bd-45f8-b520-7b20f91288e2.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_desatracacao
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: aa47bb3a-3ccb-4e8e-97ac-385884cb6a3a
+		summarizeBy: none
+		sourceColumn: data_desatracacao
+
+		variation Variation
+			isDefault
+			relationship: 1bdb0aea-72e0-4fb9-9b81-2ce21433e258
+			defaultHierarchy: LocalDateTable_e617d2bf-47eb-4659-bd29-3e2905ae3afc.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_inicio_operacao
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a8905426-c4ad-4dd3-928c-cc18f528fa6c
+		summarizeBy: none
+		sourceColumn: data_inicio_operacao
+
+		variation Variation
+			isDefault
+			relationship: 8831ce0b-dfe8-4e4e-bdbb-81b607695732
+			defaultHierarchy: LocalDateTable_5bb58215-b6ac-437c-aced-1b4b450ba228.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_termino_operacao
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a98821c6-8b5a-41bf-a292-5ea3154565e6
+		summarizeBy: none
+		sourceColumn: data_termino_operacao
+
+		variation Variation
+			isDefault
+			relationship: 71a970f7-8748-4c76-a375-b73928f301a8
+			defaultHierarchy: LocalDateTable_778e48a9-5197-4848-b05d-923984f92fb0.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: dedc5b27-dce8-4122-ad32-a907a1989d2b
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: string
+		lineageTag: b85c658f-a334-4ff9-9ef9-4409bd4e2542
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_de_operacao
+		dataType: string
+		lineageTag: 9e66b9b0-fcff-4e55-beea-57f7503cb080
+		summarizeBy: none
+		sourceColumn: tipo_de_operacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_de_navegacao_da_atracacao
+		dataType: string
+		lineageTag: cb4f7c04-e11e-4305-bd0a-7613ac2267b7
+		summarizeBy: none
+		sourceColumn: tipo_de_navegacao_da_atracacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nacionalidade_do_armador
+		dataType: double
+		lineageTag: 8ddda55c-9b0c-47c9-8cbe-188057ba6442
+		summarizeBy: sum
+		sourceColumn: nacionalidade_do_armador
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column flagmcoperacaoatracacao
+		dataType: int64
+		formatString: 0
+		lineageTag: 01edbd51-552d-4dad-a372-2899f306bfef
+		summarizeBy: sum
+		sourceColumn: flagmcoperacaoatracacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column terminal
+		dataType: string
+		lineageTag: bb867e56-716f-4865-82f3-5af6fd1be6d6
+		summarizeBy: none
+		sourceColumn: terminal
+
+		annotation SummarizationSetBy = Automatic
+
+	column municipio
+		dataType: string
+		lineageTag: 8a73d574-0971-4bc4-8c38-76c1c3a12f50
+		summarizeBy: none
+		sourceColumn: municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf
+		dataType: string
+		lineageTag: a102388d-31a5-488f-af3a-be868ef61adb
+		summarizeBy: none
+		sourceColumn: uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column sguf
+		dataType: string
+		lineageTag: e0d2e02a-1aa2-4f06-af64-d8db2bb9dd81
+		summarizeBy: none
+		sourceColumn: sguf
+
+		annotation SummarizationSetBy = Automatic
+
+	column regiao_geografica
+		dataType: string
+		lineageTag: bc1d64fb-e5d3-4060-a78f-0b5d7ccfaef6
+		summarizeBy: none
+		sourceColumn: regiao_geografica
+
+		annotation SummarizationSetBy = Automatic
+
+	column regiao_hidrografica
+		dataType: string
+		lineageTag: ad5544d7-6e9f-48af-bc55-a308a6e1747b
+		summarizeBy: none
+		sourceColumn: regiao_hidrografica
+
+		annotation SummarizationSetBy = Automatic
+
+	column instalacao_portuaria_em_rio
+		dataType: string
+		lineageTag: 4dc29750-2e9f-4551-a6d1-63644677600c
+		summarizeBy: none
+		sourceColumn: instalacao_portuaria_em_rio
+
+		annotation SummarizationSetBy = Automatic
+
+	column no_da_capitania
+		dataType: string
+		lineageTag: 6456cf92-86e8-4539-8ad5-36cb35a929b0
+		summarizeBy: none
+		sourceColumn: no_da_capitania
+
+		annotation SummarizationSetBy = Automatic
+
+	column no_do_imo
+		dataType: string
+		lineageTag: 800706e9-6f4b-4bb7-90f2-9788c2f85b4f
+		summarizeBy: none
+		sourceColumn: no_do_imo
+
+		annotation SummarizationSetBy = Automatic
+
+	column longitude
+		dataType: double
+		lineageTag: 336d6b86-f599-4883-b5d5-15ef5354c4d0
+		summarizeBy: sum
+		sourceColumn: longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column latitude
+		dataType: double
+		lineageTag: c7b3cd55-b398-4cdd-bc56-b30bcaa54f81
+		summarizeBy: sum
+		sourceColumn: latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'antaq_database atracacao' = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("localhost", "antaq_database", [ReturnSingleDatabase=true]),
+				    antaq_database_atracacao = Fonte{[Schema="antaq_database",Item="atracacao"]}[Data]
+				in
+				    antaq_database_atracacao
+
+	annotation PBI_ResultType = Table
+
