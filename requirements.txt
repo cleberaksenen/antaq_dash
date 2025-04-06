@@ -1,0 +1,5 @@
+requests
+pandas
+unidecode
+mysql-connector-python
+python-dotenv
